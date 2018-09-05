@@ -1,0 +1,237 @@
+* {
+  margin: 0px;
+  padding: 0px
+}
+
+.container {
+  color: #FFF;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: repeat(3, 1fr);
+  grid-template-areas: 
+  "box1 box1 box2 box3 box3"
+  "box4 box5 box6 box3 box3"
+  "box7 box8 box9 box3 box3";
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-size: .60em;
+}
+
+p {
+  font-size: .85em;
+  margin-bottom: 5%;
+}
+
+a {
+  background-color: #464546;
+  border: 1.5px solid white;
+  color: white;
+  display: inline-block;
+  font-size: .60em;
+  padding: 15px 15px;
+  text-align: center; 
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #621B00;
+}
+
+.fa-file-download, .fa-info {
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.fa-kiwi-bird, .fa-feather-alt, .fa-award, .fa-graduation-cap, .fa-twitter, .fa-mobile-alt, .fa-camera {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.fa-chevron-circle-right {
+  font-size: 2rem;
+  opacity: .5;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+}
+
+.fa-chevron-circle-left {
+  font-size: 2rem;
+  opacity: .5;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+}
+
+.fa-ellipsis-h {
+  position: absolute;
+  font-size: 2rem;
+  opacity: .25;
+  right: 3%;
+}
+
+.box1 {
+  background-color: #3C3A3A;
+  grid-area: box1;
+  grid-column: span 2;
+  font-size: 1.75em;
+  padding-top: 10%;
+  padding-left: 5%;
+  text-align: left;
+}
+
+.box2 {
+  background-color: #C93B35;
+  grid-area: box2;
+  padding: 25%;
+}
+
+.box3 {
+  background-size: cover;
+  background-image: url('images/Chicken.jpg');
+  background-repeat: no-repeat;
+  display: flex;
+  grid-column: span 2;
+  grid-row: span 3;
+  grid-area: box3;
+  position: relative;
+}  
+
+.box4 {
+  background-color: #945600;
+  grid-area: box4;
+  padding: 25%;
+}
+
+.box5 {
+  background-color: #621B00;
+  grid-area: box5; 
+  padding: 25%;
+}
+
+.box6 {
+  background-color: #3C3A3A;
+  grid-area: box6; 
+  padding: 25%;
+}
+
+.box7 {
+  background-color: #621B00;
+  grid-area: box7;
+  padding: 25%;
+}
+
+.box8 {
+  background-color: #C93B35;
+  grid-area: box8;
+  padding: 25%;
+}
+
+ .box9 {
+  background-color: #945600;
+  grid-area: box9;
+  padding: 25%;
+ }
+
+@media (max-width: 900px) {
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px
+}
+
+body {
+  height: 100%;
+  width: 100%; 
+}
+
+.container {
+  color: #FFF;
+  display: grid;
+  grid-template-areas: 
+  "box1 box1 box2"
+  "box4 box5 box6"
+  "box7 box8 box9"
+  "box3 box3 box3"
+  "box3 box3 box3";
+  height: 100vh;
+  text-align: center;
+}
+
+.box1 {
+  font-size: 1.6em;
+  text-align: center;
+  padding-right: 30px;
+  padding-bottom: 10%;
+  width: 100%;
+}
+
+h2 {
+  font-size: .75em;
+}
+}
+
+@media (max-width: 320px) {
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px
+}
+
+body {
+  height: 100%;
+  width: 100%; 
+}
+
+.container {
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.box1 {
+  background-color: #3C3A3A;
+  font-size: 1.3em;
+  grid-area: box1;
+  text-align: center;
+  padding-right: 15px;
+  padding-bottom: 10%;
+  width: 100%;
+}
+
+a {
+  border: 1.0px solid white;
+  display: inline-block;
+  font-size: .20em;
+  padding: 5px 5px;
+
+}
+
+h2 {
+  font-size: .65em;
+}
+
+.fa-ellipsis-h { 
+  display: none;
+}
+
+.chevrons {
+  display: none;
+}
+
+}
