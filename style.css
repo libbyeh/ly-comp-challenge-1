@@ -68,16 +68,16 @@ a:hover {
 
 .fa-chevron-circle-left {
   font-size: 2rem;
+  left: 3%;
   opacity: .5;
   position: absolute;
   top: 50%;
-  left: 3%;
 }
 
 .fa-ellipsis-h {
-  position: absolute;
   font-size: 2rem;
   opacity: .25;
+  position: absolute;
   right: 3%;
 }
 
@@ -142,32 +142,24 @@ a:hover {
   background-color: #945600;
   grid-area: box9;
   padding: 25%;
- }
+}
 
 @media (max-width: 900px) {
 
 * {
   box-sizing: border-box;
   margin: 0px;
-  padding: 0px
-}
-
-body {
-  height: 100%;
-  width: 100%; 
+  padding: 0px;
 }
 
 .container {
-  color: #FFF;
   display: grid;
-  grid-template-areas: 
-  "box1 box1 box2"
-  "box4 box5 box6"
-  "box7 box8 box9"
-  "box3 box3 box3"
-  "box3 box3 box3";
-  height: 100vh;
-  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid:hover {
+  background-size: cover;
+  background-image: url('images/Chicken2.jpeg');
 }
 
 .box1 {
@@ -178,8 +170,20 @@ body {
   width: 100%;
 }
 
+.box1:hover {
+  background-image: url('images/feather.jpg');
+}
+
 h2 {
   font-size: .75em;
+}
+
+.fa-ellipsis-h { 
+  display: none;
+}
+
+.chevrons {
+  display: none;
 }
 }
 
@@ -188,12 +192,7 @@ h2 {
 * {
   box-sizing: border-box;
   margin: 0px;
-  padding: 0px
-}
-
-body {
-  height: 100%;
-  width: 100%; 
+  padding: 0px;
 }
 
 .container {
@@ -204,10 +203,12 @@ body {
   width: 100%;
 }
 
+.box1:hover {
+  background-image: url('images/feather.jpg');
+}
+
 .box1 {
-  background-color: #3C3A3A;
   font-size: 1.3em;
-  grid-area: box1;
   text-align: center;
   padding-right: 15px;
   padding-bottom: 10%;
@@ -216,14 +217,12 @@ body {
 
 a {
   border: 1.0px solid white;
-  display: inline-block;
   font-size: .20em;
   padding: 5px 5px;
-
 }
 
 h2 {
-  font-size: .65em;
+  font-size: .70em;
 }
 
 .fa-ellipsis-h { 
@@ -233,5 +232,4 @@ h2 {
 .chevrons {
   display: none;
 }
-
 }
